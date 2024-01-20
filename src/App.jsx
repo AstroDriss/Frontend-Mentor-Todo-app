@@ -48,8 +48,8 @@ function App() {
   return (
     <ThemeProvider>
       <div className={`max-w-[1440px] mx-auto container min-h-full`}>
-        <div className="max-w-[33rem] mx-auto sm:px-0 px-4 pt-8 sm:pt-16">
-          <Header className="mb-8" />
+        <div className="max-w-[33rem] mx-auto sm:px-0 px-4 pt-8 sm:pt-[4.6rem]">
+          <Header className="sm:mb-14 mb-8" />
           <TodoForm addTodo={addTodo} />
           <TodoList
             className="mt-7"

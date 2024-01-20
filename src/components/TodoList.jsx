@@ -81,15 +81,13 @@ const TodoList = ({
                   className="flex-1 cursor-pointer flex items-center gap-5 dark:text-dark-LightGrayishBlue"
                   htmlFor={todo.id}
                   tabIndex="0"
-                  role="checkbox"
-                  aria-checked={todo.complete}
                   onKeyDown={(e) => {
                     if (e.key === " " || e.key === "Enter") {
                       toggleComplete(todo.id);
                     }
                   }}
                 >
-                  <div
+                  <span
                     className={`${
                       todo.complete && "bg-Check "
                     } relative w-7 h-7 rounded-full flex justify-center items-center`}
@@ -112,7 +110,7 @@ const TodoList = ({
                     </svg>
 
                     {todo.complete && <img src={check} alt="" />}
-                  </div>
+                  </span>
                   <span
                     className={`sm:text-sm text-xs ${
                       todo.complete && "line-through text-darkGrayishBlue"

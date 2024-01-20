@@ -13,7 +13,7 @@ const Header = (props) => {
         TODO
       </h1>
 
-      <button onClick={() => toggleTheme()}>
+      <button onClick={() => toggleTheme()} aria-label="Toggle theme">
         <img src={theme == "light" ? moon : sun} alt="" />
       </button>
     </header>

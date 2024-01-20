@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [here](https://www.frontendmentor.io/solutions/react-todo-app-tailwindcss-dG-h0RQA14)
+- Live Site URL: [here](https://frontend-mentor-todo-app-sigma.vercel.app/)
 
 ## My process
 
