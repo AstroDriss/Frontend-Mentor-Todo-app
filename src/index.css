@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  background-image: url(./assets/bg-desktop-light.jpg);
+  background-repeat: no-repeat;
+}
+
+:root {
+  --Bright-Blue: hsl(220, 98%, 61%);
+  --Check-Background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+  --Very-Light-Gray: 0deg 0% 98%;
+  --Very-Light-Grayish-Blue: 236deg 33% 92%;
+  --Light-Grayish-Blue: 233deg 11% 84%;
+  --Dark-Grayish-Blue: 236deg 9% 61%;
+  --Very-Dark-Grayish-Blue: 235deg 19% 35%;
+}
+
+:has(.dark) {
+  color-scheme: dark;
+
+  --Very-Dark-Blue: 235deg 21% 11%;
+  --Very-Dark-Desaturated-Blue: 235 24% 19%;
+  --Light-Grayish-Blue: 234 39% 85%;
+  --Light-Grayish-Blue-hover: 236 33% 92%; /*hover*/
+  --Dark-Grayish-Blue: 234 11% 52%;
+  --Very-Dark-Grayish-Blue: 233 14% 35%;
+  --Very-Dark-Grayish-Blue: 237 14% 26%;
+}
+:has(.dark) .container {
+  background-image: url(./assets/bg-desktop-dark.jpg);
+}
+body {
+  background-color: hsl(var(--Very-Light-Gray));
+}
+html:has(.dark) body {
+  background-color: hsl(var(--Very-Dark-Blue));
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    background-image: url(./assets/bg-mobile-light.jpg);
+  }
+  :has(.dark) .container {
+    background-image: url(./assets/bg-mobile-dark.jpg);
+  }
+}
